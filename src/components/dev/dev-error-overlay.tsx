@@ -48,7 +48,7 @@ export function DevErrorOverlay() {
   const [isOpen, setIsOpen] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [errors, setErrors] = useState<DevErrorItem[]>([]);
-  const originalConsoleError = useRef<typeof console.error>();
+  const originalConsoleError = useRef<typeof console.error | null>(null);
 
   const errorCount = errors.length;
 
