@@ -69,7 +69,7 @@ const JobCard = ({
           </Button>
         )}
         <Button
-          variant="destructive-outline"
+          variant="destructive"
           size="sm"
           onClick={() => onDelete(job)}
         >
