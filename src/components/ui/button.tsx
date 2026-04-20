@@ -15,6 +15,7 @@ export const buttonVariants = cva(
         accent: "bg-amber-600 text-white hover:bg-amber-500",
         destructive: "bg-rose-600 text-white hover:bg-rose-500",
         outline: "border border-slate-300 bg-transparent text-slate-900 hover:bg-slate-50",
+        link: "h-auto bg-transparent p-0 text-amber-700 underline-offset-4 hover:underline",
       },
       size: {
         default: "h-11 px-6",
