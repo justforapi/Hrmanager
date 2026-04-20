@@ -1,11 +1,13 @@
 import { cn } from "@/lib/utils";
 
 type PillBadgeProps = {
-  text: string;
+  text?: string;
+  children?: React.ReactNode;
   variant?: "green" | "amber" | "blue" | "gray" | "dark" | "accent" | "warning";
 };
 
-export function PillBadge({ text, variant = "gray" }: PillBadgeProps) {
+export function PillBadge({ text, children, variant = "gray" }: PillBadgeProps) {
+  const content = text ?? children;
   return (
     <span
       className={cn(
@@ -25,7 +27,7 @@ export function PillBadge({ text, variant = "gray" }: PillBadgeProps) {
         }
       )}
     >
-      {text}
+      {content}
     </span>
   );
 }
